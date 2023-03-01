@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>NEw Box</title>
+    <style>
+      body {
+        background-color: #e4e9f7;
+      }
+      .popup .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        /* display: none; */
+      }
+      .popup .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /*scale(0)*/
+        background-color: #fff;
+        width: 450px;
+        height: 400px;
+        z-index: 2;
+        padding: center;
+        box-sizing: border-box;
+        border-radius: 10px;
+      }
+      .popup .content h5 {
+        margin: 20px;
+        text-align: center;
+        /* height: 40px;
+        border-bottom: 1px solid #ddd; */
+      }
+      .popup .close-btn {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 30px;
+        height: 30px;
+        color: #ddd;
+        font-size: 25px;
+        cursor: pointer;
+      }
+      /* .popup.active .overlay {
+        display: block;
+      }
+      .popup.active .content {
+        transition: all 300ms ease-in-out;
+        transform: translate(-50%, -50%) scale(0);
+      } */
+      form {
+        padding: 10px 30px 0 30px;
+      }
+      .form-control,
+      .form-select {
+        height: 50px;
+        border-radius: 10px;
+      }
+      .btn {
+        margin-top: -11%;
+        height: 54px;
+        border-radius: 12px;
+      }
+      .blue-color {
+        color: #00f;
+      }
+      select,
+      .form-group {
+        margin-bottom: 2rem;
+      }
+      input[type="password"]::placeholder {
+        font-weight: 500;
+        color: #000;
+      }
+      input::placeholder {
+        padding: 5px;
+        font-size: 15px;
+      }
+      .form-select {
+        margin-top: 15px;
+      }
+      form {
+        border-top: 1px solid #eee;
+      }
+      .wrapper {
+        width: 390px;
+        margin-bottom: 20px;
+      }
+      .wrapper.active .content {
+        display: block;
+      }
+      .select-btn {
+        height: 65px;
+        font-size: 22px;
+        display: flex;
+        cursor: pointer;
+        padding: 0 20px;
+        border-radius: 7px;
+        background-color: #fff;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #eee;
+        border-radius: 20px;
+      }
+      .contnet {
+        /* display: none; */
+        margin-left: 5px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 7px;
+        position: absolute;
+        width: 83%;
+      }
+      .select-btn span {
+        color: #4040f6;
+        margin-left: 0px;
+      }
+      .select-btn svg {
+        font-size: 20px;
+        color: #4040f6;
+        transition: transform 0.3s linear;
+      }
+      .content .search {
+        position: relative;
+      }
+      .search svg {
+        right: 15px;
+        line-height: 53px;
+        position: absolute;
+        top: 10px;
+        color: #b5b6be;
+      }
+      .search input {
+        height: 40px;
+        border: none;
+        outline: none;
+        width: 100%;
+        padding: 0 15px 0 0;
+      }
+      .options li {
+        padding: 0 13px;
+        font-size: 12px;
+        height: 50px;
+        padding: 0;
+      }
+      .select-btn,
+      .options li {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+      }
+      .content .options {
+        margin-top: 10px;
+        max-height: 250px;
+        overflow-x: auto;
+        padding: 0;
+      }
+      .wrapper.active .select-btn svg {
+        transform: rotate(-180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times</div>
+        <h5>New Campaign</h5>
+        <form>
+          <div class="wrapper">
+            <div class="select-btn">
+              <span>Campaigns</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="contnet shadow">
+              <div class="search" id="select">
+                <input type="text" placeholder="New" id="val" />
+                <i onclick="insertValue();" class="fa-solid fa-plus"></i>
+              </div>
+              <ul class="options">
+                <li>Influncers</li>
+                <li>Promotions</li>
+                <li>Customer Services</li>
+                <li>Email</li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control bg-light"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Campaign Name"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control bg-light"
+              id="exampleInputPassword1"
+              placeholder="Rashouf.com/"
+            />
+          </div>
+          <div class="form-check"></div>
+          <button
+            type="submit"
+            class="btn btn-primary w-100"
+            onclick="togglePopup()"
+          >
+            Create
+          </button>
+        </form>
+      </div>
+    </div>
+    <script>
+      let wrapper = document.querySelector(".wrapper"),
+        selectBtn = wrapper.querySelector(".select-btn");
+      let search = document.querySelector(".search");
+
+      selectBtn.addEventListener("click", () => {
+        wrapper.classList.toggle("active");
+      });
+
+      function insertValue() {
+        let select = document.getElementById("select"),
+          txtVal = document.getElementById("val").value,
+          newOption = document.createElement("OPTION"),
+          newOptionVal = document.createTextNode(txtVal);
+
+        newOption.appendChild(newOptionVal);
+        select.insertBefore(newOption, select.lastChild);
+      }
+    </script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

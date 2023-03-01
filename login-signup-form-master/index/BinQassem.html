@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>BinQassem</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul class="nav-links">
+        <li>
+          <div class="icon-link">
+            <a href="#" style="padding-top: 10px">
+              <span class="link-name"
+                >Rashouf co <br />
+                <p style="font-size: 5px; color: #eee">Rashouf.com.sa</p>
+              </span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+        </li>
+
+        <div class="dashed">
+          <li>
+            <a href="#">
+              <span class="link-name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="link-name">Insights</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="link-name">Influncers ads</span>
+            </a>
+          </li>
+        </div>
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <!--<img src="image/profile.jpg" alt="profileImg">-->
+            </div>
+            <i class="">adsata</i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <style>
+      .home-section .container {
+        margin: 0 !important;
+      }
+      .home-section .container .card {
+        margin-left: -5px;
+        margin-top: 0;
+        border: none;
+        border-radius: 10px;
+      }
+      .home-section .container .card .card-body {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+      }
+      .home-section .container .card .card-body h1,
+      .home-section .container .card .card-body span {
+        font-size: 15px;
+        color: #4040f6;
+      }
+
+      @media (max-width: 992px) {
+        .home-section .container .card {
+          width: 20rem;
+        }
+        .home-section .container .card .card-body {
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+        }
+        .home-section .container .card .card-body .box {
+          margin-bottom: 2rem;
+        }
+      }
+      .BinQassem {
+        margin-bottom: 1rem;
+        margin-left: 5%;
+      }
+      #myTable {
+        border-radius: 10%;
+      }
+      .tabel {
+        margin-left: 5%;
+      }
+    </style>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+      <div class="BinQassem">
+        <div class="container">
+          <div class="row">
+            <div class="card">
+              <div class="card-body">
+                <div class="box">
+                  <h1>Visits</h1>
+                  <span>1,702,324</span>
+                </div>
+                <div class="box">
+                  <h1>Orders</h1>
+                  <span>52,021</span>
+                </div>
+                <div class="box">
+                  <h1>Conversion rate</h1>
+                  <span>4.7%</span>
+                </div>
+                <div class="box">
+                  <h1>Revenu</h1>
+                  <span>93,000SR</span>
+                </div>
+                <div class="box">
+                  <h1>ROI</h1>
+                  <span>3.4</span>
+                </div>
+                <div class="box">
+                  <h1>Status</h1>
+                  <span>Complete 90%</span>
+                </div>
+                <div class="box">
+                  <h1>Best seller</h1>
+                  <span>Honey01</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabel" style="border-radius: 10px">
+        <div class="container">
+          <div class="row">
+            <div class="select">
+              <ul class="search">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+              </ul>
+              <input
+                type="text"
+                id="myInput"
+                onkeyup="myFunction()"
+                placeholder="Search"
+                title="Type in a name"
+              />
+
+              <div class="icon-link" style="border-radius: 50px">
+                <a
+                  href="#"
+                  style="color: #4040f6; font: 18px/20px normal normal medium"
+                  >All time</a
+                >
+                <i style="color: #4040f6" class="bx bxs-chevron-down arrow"></i>
+              </div>
+            </div>
+            <style>
+              input[type="checkbox"] {
+                font-size: 30px;
+              }
+            </style>
+            <table id="myTable">
+              <thead>
+                <tr>
+                  <th style="font-size: 20px" scope="col">
+                    <input type="checkbox" name="" id="" />
+                  </th>
+                  <th style="font-size: 20px" scope="col">Id</th>
+                  <th style="font-size: 20px" scope="col">Name</th>
+                  <th style="font-size: 20px" scope="col">Cart</th>
+                  <th style="font-size: 20px" scope="col">Payment method</th>
+                  <th style="font-size: 20px" scope="col">Status</th>
+                  <th style="font-size: 20px; text-align: center" scope="col">
+                    Total
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-light">
+                  <th scope="col"><input type="checkbox" name="" id="" /></th>
+                  <td>31391991</td>
+                  <td>Omar Alhus…</td>
+                  <td style="color: #4040f6">View</td>
+                  <td>CC</td>
+                  <td style="color: #2fddc2">Complete</td>
+                  <td style="text-align: center">429.00SR</td>
+                </tr>
+                <tr>
+                  <th scope="col"><input type="checkbox" name="" id="" /></th>
+                  <td>31391932</td>
+                  <td>Salem Khal…</td>
+                  <td style="color: #4040f6">View</td>
+                  <td>COD</td>
+                  <td style="color: #b5b6be">Pending</td>
+                  <td style="text-align: center">429.00SR</td>
+                </tr>
+                <tr class="bg-light">
+                  <th scope="col"><input type="checkbox" name="" id="" /></th>
+                  <td>31391921</td>
+                  <td>Falowa</td>
+                  <td style="color: #4040f6">View</td>
+                  <td>CC</td>
+                  <td style="color: #fc4f22">Cancel</td>
+                  <td style="text-align: center">199.00SR</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

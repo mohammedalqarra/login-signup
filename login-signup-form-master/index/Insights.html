@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Insights</title>
+      <style>
+      .home-section .container {
+        margin: 0 !important;
+      }
+      .home-section .container .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+      }
+     
+       @media (max-width: 992px) {
+        .home-section .container .card {
+        margin-bottom: 10%;
+        margin:auto;
+        }
+      }
+   
+      #myInput {
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+
+      #myTable {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 18px;
+      }
+      .tabel {
+        border-radius: 10px;
+        margin-top: 5%;
+      }
+      .tabel .container .row {
+        background: #fff;
+        border-radius: 17px;
+      }
+      .tabel .container .row h2 {
+        margin-left: 9px;
+        font-size: 19px;
+        line-height: 2.5;
+      }
+   
+         .home-section{
+          overflow:scroll;
+         }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul class="nav-links">
+        <li>
+          <div class="icon-link">
+            <a href="#" style="padding-top: 10px">
+              <span class="link-name"
+                >Rashouf co <br />
+                <p style="font-size: 5px; color: #eee">Rashouf.com.sa</p>
+              </span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+        </li>
+
+        <div class="dashed">
+          <li>
+            <a href="#">
+              <span class="link-name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="link-name">Insights</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="link-name">Influncers ads</span>
+            </a>
+          </li>
+        </div>
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <!--<img src="image/profile.jpg" alt="profileImg">-->
+            </div>
+            <i class="">adsata</i>
+          </div>
+        </li>
+      </ul>
+    </div>
+  
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+      </div>
+      <div class="Insights">
+        <div class="container">
+          <div class="row">
+            <div class="card" style="width: 30rem; height: 20rem"">
+              <div class="card-body">
+                <h5>Best times</h5>
+                <div class="circel"></div>
+                <div class="clock">
+                  <span class="pm-1">07 pm 206</span>
+                  <span class="pm-2">08 PM 172</span>
+                  <span class="pm-3">02 PM 171</span>
+                  <span class="pm-4">09 PM 168</span>
+                  <span class="pm-5">01 PM 165</span>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="width: 30rem; height: 20rem">
+              <div class="card-body">
+                <h5>Best days</h5>
+                <div class="days">
+                  <span class="sun"> sun </span>
+                  <span class="Mon"> Mon </span>
+                  <span class="Tue"> Tue </span>
+                  <span class="Wed"> Wed </span>
+                  <span class="Thur"> Thur </span>
+                  <span class="Fri"> Fri </span>
+                  <span class="Sat"> Sat </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabel">
+        <div class="container">
+          <div class="row">
+            <h2>Best products</h2>
+            <table id="myTable">
+              <tr class="header" style="color: #ddd">
+                <th style="width: 60%; padding-left: 22px; font-size: 18px">
+                  Name
+                </th>
+                <th style="text-align: end; padding: 0 4% 0 0; font-size: 18px">
+                  Country
+                </th>
+              </tr>
+              <tr class="bg-light">
+                <td>Alfreds Futterkiste</td>
+                <td style="text-align: end; padding: 0 4% 0 0">234</td>
+              </tr>
+              <tr>
+                <td>Berglunds snabbkop</td>
+                <td style="text-align: end; padding: 0 4% 0 0">129</td>
+              </tr>
+              <tr class="bg-light">
+                <td>Berglunds snabbkop</td>
+                <td style="text-align: end; padding: 0 4% 0 0">80</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

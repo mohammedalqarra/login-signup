@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Influncers</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul class="nav-links">
+        <li>
+          <div class="icon-link">
+            <a href="#" style="padding-top: 10px">
+              <span class="link-name"
+                >Rashouf co <br />
+                <p style="font-size: 5px; color: #eee">Rashouf.com.sa</p>
+              </span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+        </li>
+
+        <div class="dashed">
+          <li>
+            <a href="#">
+              <span class="link-name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="link-name">Insights</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="link-name">Influncers ads</span>
+            </a>
+          </li>
+        </div>
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <!--<img src="image/profile.jpg" alt="profileImg">-->
+            </div>
+            <i class="">adsata</i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="select">
+           <ul class="search">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul>
+            <input
+              type="text"
+              id="myInput"
+              onkeyup="myFunction()"
+              placeholder="Search"
+              title="Type in a name"
+            />
+            
+             <div class="icon-link">
+                <a href="#">Snapchat</a>
+                <i class="bx bxs-chevron-down arrow"></i>
+             </div>
+          </div>
+          <table id="myTable">
+            <tr class="header">
+              <th style="width: 60%;font-size: 20px;">Name</th>
+              <th style="width: 40%;font-size: 20px;">Country</th>
+              <th style="width: 40%;font-size: 20px;">Rating</th>
+            </tr>
+            <tr class="bg-light">
+              <td>Naif Hamdan</td>
+              <td>@naif_02</td>
+              <td  style="color:#ddd">(32)
+                <td>10/10</td>
+              </td>
+            </tr>
+            <tr>
+              <td>BinQassem</td>
+              <td>@qassem</td>
+              <td  style="color:#ddd">(44)
+                <td>10/9</td>
+              </td>
+            </tr>
+            <tr class="bg-light">
+              <td>Ghazy</td>
+              <td>@ghazy_thyaby</td>
+              <td style="color:#ddd">(10)
+                <td>10/8</td>
+              </td>
+            </tr>
+            <tr>
+              <td>Abo Mshari</td>
+              <td>@abomshari01</td>
+              <td  style="color:#ddd">(3)
+                <td>10/7</td>
+              </td>
+            </tr>
+            <tr class="bg-light">
+              <td>Mohammed Diry</td>
+              <td>@m0_diriy</td>
+              <td  style="color:#ddd">(2)
+                <td>10/7</td>
+              </td>
+            </tr>
+            <tr>
+              <td>Aml</td>
+              <td>@bkh0123</td>
+              <td  style="color:#ddd">(3)
+                <td>10/5</td>
+              </td>
+            </tr>
+            <tr class="bg-light">
+              <td>Bakhateeb</td>
+              <td>@bkh0123</td>
+              <td  style="color:#ddd">(7)
+                <td>10/4</td>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!--Start connect-->
+
+    <!--End connect-->
+
+    <script>
+      function myFunction() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+    </script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

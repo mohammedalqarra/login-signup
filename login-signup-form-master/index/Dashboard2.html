@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+    <style>
+      .home-section .container {
+        margin: 0 !important;
+      }
+      .home-section .container .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+      }
+
+      @media (max-width: 992px) {
+        .home-section .container .card {
+          margin-bottom: 10%;
+          margin: auto;
+        }
+      }
+
+      #myInput {
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+
+      #myTable-one,
+      #myTable-two,
+      #myTable-three {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 18px;
+      }
+      .tabel {
+        border-radius: 10px;
+        margin-top: 5%;
+      }
+      .tabel .container .row {
+        background: #fff;
+        border-radius: 17px;
+      }
+      .tabel .container .row h2 {
+        margin-left: 9px;
+        font-size: 19px;
+        line-height: 2.5;
+      }
+
+      .home-section {
+        overflow: scroll;
+      }
+      .home-section .container .Dashboard-tabel {
+        margin-top: 12px;
+        margin-bottom: -2px;
+      }
+      .home-section .container .Dashboard-tabel {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+        position: relative;
+      }
+      .home-section .container .Dashboard-tabel .icon-link {
+        border-radius: 50px;
+        border: 2px solid #00f;
+        padding: 10px 23px;
+        margin-top: -11px;
+        font-size: 18px;
+      }
+      .home-section .container .Dashboard-tabel input {
+        border: none;
+        outline: none;
+      }
+      .home-section .container .Dashboard-tabel input::placeholder {
+        color: #ddd;
+        font-size: 20px;
+      }
+      .home-section .container .Dashboard-tabel button {
+        border: none;
+        outline: none;
+        background-color: #4040f6;
+        color: #fff;
+        border-radius: 50px;
+        padding: 10px 15px;
+      }
+      form {
+        position: relative;
+      }
+      form svg {
+        color: #ddd;
+        font-size: 20px;
+      }
+
+      #myTable-three th,
+      #myTable-three td {
+        text-align: left;
+        padding: 12px 12px 31px 12px;
+        font-size: 15px;
+        font-family: normal normal medium;
+        font-size: 20px;
+      }
+
+      .home-section .container .Dashboard-tabel .switcher {
+        display: flex;
+      }
+      .home-section .container .Dashboard-tabel .switcher li {
+        position: relative;
+        margin-right: 35px;
+        color: #ddd;
+        cursor: pointer;
+      }
+      /* .home-section .container .Dashboard-tabel .switcher li.active {
+        color: #4040f6;
+      }
+      .home-section .container .Dashboard-tabel li.active::after {
+        position: absolute;
+        content: "";
+        width: 91px;
+        height: 3px;
+        background-color: #00f;
+        bottom: -5px;
+        left: 0;
+      } */
+      .home-section .container .Dashboard-tabel .switcher li:hover {
+        color: #4040f6;
+      }
+
+      .home-section .container .Dashboard-tabel li:hover::after {
+        position: absolute;
+        content: "";
+        width: 91px;
+        height: 3px;
+        background-color: #00f;
+        bottom: -5px;
+        left: 0;
+      }
+      .home-section .container .Dashboard-tabel li:last-child:hover::after {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #00f;
+        bottom: -5px;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul class="nav-links">
+        <li>
+          <div class="icon-link">
+            <a href="#" style="padding-top: 10px">
+              <span class="link-name"
+                >Rashouf co <br />
+                <p style="font-size: 5px; color: #eee">Rashouf.com.sa</p>
+              </span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+        </li>
+
+        <div class="dashed">
+          <li>
+            <a href="#">
+              <span class="link-name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="link-name">Insights</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="link-name">Influncers ads</span>
+            </a>
+          </li>
+        </div>
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <!--<img src="image/profile.jpg" alt="profileImg">-->
+            </div>
+            <i class="">adsata</i>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+      </div>
+      <div class="Dashboard">
+        <div class="container">
+          <div class="row">
+            <div class="card">
+              <div class="card-body">
+                <div class="box">
+                  <h1>Visits</h1>
+                  <span>1,702,324</span>
+                </div>
+                <div class="box">
+                  <h1>Orders</h1>
+                  <span>52,021</span>
+                </div>
+                <div class="box">
+                  <h1>Conversion rate</h1>
+                  <span>4.7%</span>
+                </div>
+                <div class="box">
+                  <h1>Revenu</h1>
+                  <span>93,000SR</span>
+                </div>
+                <div class="box">
+                  <h1>ROI</h1>
+                  <span>3.4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabel">
+        <div class="container">
+          <div class="row">
+            <div class="Dashboard-tabel">
+              <ul class="switcher">
+                <li data-cate=".myTable-one" class="active">Campaigns</li>
+                <li data-cate=".myTable-two">Ad Groups</li>
+                <li data-cate=".myTable-three">Ads</li>
+              </ul>
+              <form action="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Search" />
+              </form>
+              <div class="icon-link" style="border-radius: 50px">
+                <a style="color: #4040f6">All time</a>
+                <i style="color: #4040f6" class="bx bxs-chevron-down arrow"></i>
+              </div>
+              <div style="margin-top: -10px" class="button">
+                <button>+ Campign</button>
+              </div>
+            </div>
+            <table id="myTable-three" class="myTable-three">
+              <thead>
+                <tr>
+                  <th style="font-size: 20px" scope="col">
+                    <input type="checkbox" name="" id="" />
+                  </th>
+                  <th style="font-size: 20px" scope="col">Name</th>
+                  <th style="font-size: 20px" scope="col">Visits</th>
+                  <th style="font-size: 20px" scope="col">Orders</th>
+                  <th style="font-size: 20px" scope="col">Conversion rate</th>
+                  <th style="font-size: 20px" scope="col">Revenu</th>
+                  <th style="font-size: 20px; text-align: center" scope="col">
+                    ROI
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-light">
+                  <th scope="col"><input type="checkbox" name="" id="" /></th>
+                  <td>BinQassem1</td>
+                  <td>212,131</td>
+                  <td>12,031</td>
+                  <td style="text-align: center">2.35%</td>
+                  <td>11,481,470</td>
+                  <td style="text-align: center">5.3</td>
+                </tr>
+                <tr>
+                  <th scope="col"><input type="checkbox" name="" id="" /></th>
+                  <td>BinQassem2</td>
+                  <td>312,932</td>
+                  <td>9,312</td>
+                  <td style="text-align: center">4%</td>
+                  <td>7,350,524</td>
+                  <td style="text-align: center">2.2</td>
+                </tr>
+                <tr>
+                  <th scope="col"><input type="checkbox" name="" id="" /></th>
+                  <td>BinQassem3</td>
+                  <td>123,391</td>
+                  <td>8,091</td>
+                  <td style="text-align: center">2.3%</td>
+                  <td>123,131</td>
+                  <td style="text-align: center">2.3%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let switcherLis = document.querySelectorAll(".switcher li");
+
+      switcherLis.forEach((li) => {
+        li.addEventListener("click");
+      });
+      function removeAction() {
+        switcherLis.forEach((li) => {
+          li.classList.remove("active");
+          this.classList.add("active");
+        });
+      }
+    </script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

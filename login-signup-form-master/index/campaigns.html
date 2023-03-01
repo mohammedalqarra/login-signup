@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Campaigns</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul class="nav-links">
+        <li>
+          <div class="icon-link">
+            <a href="#" style="padding-top: 10px">
+              <span class="link-name"
+                >Category <br />
+                <p style="font-size: 5px; color: #eee">Rashouf.com.sa</p>
+              </span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+        </li>
+        <div class="dashed">
+          <li>
+            <a href="#">
+              <span class="link-name">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="link-name">Insights</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="link-name">Influncers ads</span>
+            </a>
+          </li>
+        </div>
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <!--<img src="image/profile.jpg" alt="profileImg">-->
+            </div>
+            <i class="">adsata</i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <style>
+      .home-section .container {
+        margin: 0 !important;
+      }
+      .home-section .container .card {
+        margin-left: -5px;
+        margin-top: 0;
+      }
+      .home-section .container .card .card-body {
+        display: flex;
+        justify-content: space-between;
+      }
+      .home-section .container .card .card-body h1,
+      .home-section .container .card .card-body span {
+        font-size: 15px;
+        color: #4040f6;
+      }
+
+      @media (max-width: 992px) {
+        .home-section .container .card {
+          width: 20rem;
+        }
+        .home-section .container .card .card-body {
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+        }
+        .home-section .container .card .card-body .box {
+          margin-bottom: 2rem;
+        }
+      }
+      .table {
+        overflow: scroll;
+      }
+      .compaiges {
+        margin-bottom: 1rem;
+        margin-left: 5%;
+      }
+      #myTable {
+        border-radius: 10%;
+      }
+      .tabel {
+        margin-left: 5%;
+      }
+    </style>
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+      </div>
+      <div class="compaiges">
+        <div class="container">
+          <div class="row">
+            <div class="card">
+              <div class="card-body">
+                <div class="box">
+                  <h1>Visits</h1>
+                  <span>1,702,324</span>
+                </div>
+                <div class="box">
+                  <h1>Orders</h1>
+                  <span>52,021</span>
+                </div>
+                <div class="box">
+                  <h1>Conversion rate</h1>
+                  <span>4.7%</span>
+                </div>
+                <div class="box">
+                  <h1>Revenu</h1>
+                  <span>93,000SR</span>
+                </div>
+                <div class="box">
+                  <h1>df</h1>
+                  <span>3.4</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tabel" style="border-radius: 10px">
+        <div class="container">
+          <div class="row">
+            <div class="select"></div>
+
+            <table id="myTable">
+              <thead>
+                <tr>
+                  <th style="font-size: 20px" scope="col">
+                    <input type="checkbox" name="" id="" />
+                  </th>
+                  <th style="font-size: 18px" scope="col">Name</th>
+                  <th style="font-size: 18px" scope="col">Visits</th>
+                  <th style="font-size: 18px" scope="col">Orders</th>
+                  <th style="font-size: 18px" scope="col">Conversion rate</th>
+                  <th style="font-size: 18px" scope="col">Revenu</th>
+                  <th style="font-size: 18px; text-align: center" scope="col">
+                    ROI
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-light">
+                  <th scope="col"><input type="checkbox" name="" id="" /></th>
+                  <td>Influncers</td>
+                  <td>1,319,212</td>
+                  <td>31,031</td>
+                  <td>2.35%</td>
+                  <td>11,481,470</td>
+                  <td style="text-align: center">5.3</td>
+                </tr>
+                <tr>
+                  <th scope="col"><input type="checkbox" name="" id="" /></th>
+                  <td>Promotions</td>
+                  <td>532,421</td>
+                  <td>21,302</td>
+                  <td>4%</td>
+                  <td>7,350,524</td>
+                  <td style="text-align: center">2.2</td>
+                </tr>
+                <tr class="bg-light">
+                  <th scope="col"><input type="checkbox" name="" id="" /></th>
+                  <td>Customer Servic..</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>0%</td>
+                  <td>0</td>
+                  <td style="text-align: center">-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
